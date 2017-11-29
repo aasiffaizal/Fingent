@@ -21,24 +21,24 @@
 	<![endif]-->
 	
 	<!-- BEGIN CSS FRAMEWORK -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/font-awesome/css/font-awesome.min.css">
 	<!-- END CSS FRAMEWORK -->
 	
 	<!-- BEGIN CSS PLUGIN -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/pace/pace-theme-minimal.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/icheck/skins/square/blue.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/switchery/switchery.min.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/select2/select2.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/select2/select2-bootstrap.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/bootstrap-slider/css/slider.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/pace/pace-theme-minimal.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/icheck/skins/square/blue.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/switchery/switchery.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/select2/select2.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/select2/select2-bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap-slider/css/slider.css">
 	<!-- END CSS PLUGIN -->
 	
 	<!-- BEGIN CSS TEMPLATE -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/main.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/skins.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skins.css">
 	<!-- END CSS TEMPLATE -->
 </head>
 
@@ -46,7 +46,7 @@
 	<!-- BEGIN HEADER -->
 	<header class="header">
 		<!-- BEGIN LOGO -->
-		<a href="<?php echo base_url(); ?>/index.php/dashboard" class="logo">
+		<a href="dashboard" class="logo">
 			<img src="http://www.infopark.in/companylogo/204fingent_logo_2014(300X100px).png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
@@ -251,22 +251,22 @@
 	</div>
 
 	<!-- BEGIN JS FRAMEWORK -->
-	<script src="http://localhost/Project/assets/plugins/jquery-2.1.0.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/jquery-2.1.0.min.js"></script>
 	<script src="http://localhost/Project/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 	<!-- END JS FRAMEWORK -->
 	
 	<!-- BEGIN JS PLUGIN -->
-	<script src="http://localhost/Project/assets/plugins/pace/pace.min.js"></script>
-	<script src="http://localhost/Project/assets/plugins/jquery-totemticker/jquery.totemticker.min.js"></script>
-	<script src="http://localhost/Project/assets/plugins/jquery-resize/jquery.ba-resize.min.js"></script>
-	<script src="http://localhost/Project/assets/plugins/jquery-blockui/jquery.blockUI.min.js"></script>
-	<script src="http://localhost/Project/assets/plugins/jquery-validation/jquery.validate.min.js"></script>
-	<script src="http://localhost/Project/assets/js/validation.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/pace/pace.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/jquery-totemticker/jquery.totemticker.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/jquery-resize/jquery.ba-resize.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/jquery-blockui/jquery.blockUI.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/jquery-validation/jquery.validate.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/validation.js"></script>
 	<!-- END JS PLUGIN -->
 
 	<!-- BEGIN JS TEMPLATE -->
-	<script src="http://localhost/Project/assets/js/main.js"></script>
-	<script src="http://localhost/Project/assets/js/skin-selector.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/main.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/skin-selector.js"></script>
 	<!-- END JS TEMPLATE -->
 </body>
 </html>
