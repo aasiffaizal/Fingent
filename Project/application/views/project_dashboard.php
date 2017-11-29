@@ -16,7 +16,7 @@
 	
 	<title>Dashboard</title>
 	
-	<link rel="icon" href="http://localhost/Project/favicon.ico">
+	<link rel="icon" href="<?php echo base_url(); ?>favicon.ico">
 	
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,18 +26,18 @@
 	<![endif]-->
 	
 	<!-- BEGIN CSS FRAMEWORK -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/font-awesome/css/font-awesome.min.css">
 	<!-- END CSS FRAMEWORK -->
 	
 	<!-- BEGIN CSS PLUGIN -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/pace/pace-theme-minimal.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/jquery-datatables/css/dataTables.bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/pace/pace-theme-minimal.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/jquery-datatables/css/dataTables.bootstrap.css">
 	<!-- END CSS PLUGIN -->
 	
 	<!-- BEGIN CSS TEMPLATE -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/main.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/skins.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skins.css">
 	<!-- END CSS TEMPLATE -->
 
 
@@ -48,7 +48,7 @@
 	<header class="header">
 		<!-- BEGIN LOGO -->
 		<a href="dashboard" class="logo">
-			<img src="http://localhost/Project/assets/img/Fingent.png" alt="Fingent" height="40">
+			<img src="<?php echo base_url(); ?>assets/img/Fingent.png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
 <!-- BEGIN NAVBAR -->
@@ -257,7 +257,7 @@
 </html>
 <script>
 
-d3.json('http://localhost/Project/index.php/project_piechartctrl/getdata', function(error, data){
+d3.json('<?php echo base_url(); ?>index.php/project_piechartctrl/getdata', function(error, data){
   data.forEach(function(d) {
      
        d.Attendance = +d.Attendance;
@@ -327,7 +327,7 @@ dc.redrawAll('group');
 </script>
 <script>
 
-d3.json('http://localhost/Project/index.php/project_piechartctrl/bubblegraph', function(error, sampleData){
+d3.json('<?php echo base_url(); ?>index.php/project_piechartctrl/bubblegraph', function(error, sampleData){
 dateFormat = d3.time.format("%Y-%m-%d");
   sampleData.forEach(function(d) {
 	d.dd = dateFormat.parse(d.Date);
@@ -415,7 +415,7 @@ var m = [80, 80, 80, 80]; // margins
 
 <script>
 dateFormat = d3.time.format("%Y-%m-%d");
-d3.json("http://localhost/Project/index.php/project_effortctrl/getvalues", function(error, data){console.log(error);
+d3.json("<?php echo base_url(); ?>index.php/project_effortctrl/getvalues", function(error, data){console.log(error);
     data.forEach(function (e) {
         e.dd = dateFormat.parse(e.Date);
         e.Effort=+e.Effort;
@@ -575,7 +575,7 @@ width:2px;
 
 
 
-d3.json("http://localhost/Project/index.php/Dashboard/row", function(error, data){
+d3.json("<?php echo base_url(); ?>index.php/Dashboard/row", function(error, data){
     data.forEach(function (e) {
 console.log(e.Day);
         e.Effort=+e.Effort;
