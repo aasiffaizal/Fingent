@@ -11,7 +11,7 @@ class Login extends CI_Controller {
   {
 if($this->session->userdata('logged_in'))
 {
-redirect('Project_displayctrl', 'refresh');
+redirect('Dashboard', 'refresh');
 }
 else
 {   
