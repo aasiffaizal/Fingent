@@ -47,7 +47,7 @@
 	<!-- BEGIN HEADER -->
 	<header class="header">
 		<!-- BEGIN LOGO -->
-		<a href="<?php echo base_url(); ?>/index.php/dashboard" class="logo">
+		<a href="<?php echo base_url(); ?>Dashboard" class="logo">
 			<img src="<?php echo base_url(); ?>assets/img/Fingent.png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
@@ -85,7 +85,7 @@
 							
 							</li>
 							<li>
-								<a href="<?php echo base_url(); ?>/index.php/Project_displayctrl/logout"><i class="fa fa-power-off"></i>Log Out</a>
+								<a href="<?php echo base_url(); ?>Logout"><i class="fa fa-power-off"></i>Log Out</a>
 							</li>
 						</ul>
 					</li>
@@ -111,25 +111,25 @@
 				
 				<ul class="sidebar-menu">
 					<li>
-						<a href="<?php echo base_url(); ?>/index.php/dashboard">
+						<a href="<?php echo base_url(); ?>Dashboard">
 							<i class="fa fa-home"></i><span>Dashboard</span>
 						</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url(); ?>/index.php/project_displayctrl">
+						<a href="<?php echo base_url(); ?>Project_displayctrl">
 							<i class="fa fa-laptop"></i><span>Admin Users</span>
 							
 						</a>
 						
 					<li >
-						<a href="<?php echo base_url(); ?>/index.php/project_employeectrl">
+						<a href="<?php echo base_url(); ?>Project_employeectrl">
 							<i class="fa fa-align-left"></i><span>Employees</span>
 							
 						</a>
 						
 					</li>
 					<li class="active">
-						<a href="<?php echo base_url(); ?>/index.php/project_calendarctrl/calendarcreate">
+						<a href="<?php echo base_url(); ?>Project_calendarctrl/calendarcreate">
 							<i class="fa fa-table"></i><span>Attendance</span>
 						
 						</a>
@@ -154,7 +154,7 @@
 				<span>Punch Details</span>
 				<ol class="breadcrumb">
 				
-					<li ><a href="<?php echo base_url(); ?>/index.php/project_calendarctrl/calendarcreate">Attendance</a></li>
+					<li ><a href="<?php echo base_url(); ?>Project_calendarctrl/calendarcreate">Attendance</a></li>
 					<li class="active">Punch Details</li>
 				</ol>
 			</section>
@@ -168,14 +168,14 @@
 						<div class="grid">
 							<div class="grid-header">
 								<i class="fa fa-bar-chart-o"></i>
-								<span class="grid-title">Attendance:&nbsp;<?php //echo $var;?></span><input type="submit" style="float: right;" class="btn btn-primary submit" onclick="location.href = '<?php echo base_url(); ?>index.php/Project_uploadctrl';" value="+Import New"></button>
+								<span class="grid-title">Attendance:&nbsp;<?php //echo $var;?></span><input type="submit" style="float: right;" class="btn btn-primary submit" onclick="location.href = '<?php echo base_url(); ?>Project_uploadctrl';" value="+Import New"></button>
 								
 							</div>
 <div class="row">
 
 							<div class="grid-body">
-<div align="center" style="font-size:30px; color:red;"><?php echo"<a href=<?php echo base_url(); ?>index.php/Project_graph2ctrl/newloadview/$day/$month/$year/0><<&emsp;</a>";$monthNum = $month; $monthName = date("F", mktime(0, 0, 0, $monthNum, 10)); echo $day." ".$monthName." ".$year;
-echo"<a href=<?php echo base_url(); ?>index.php/Project_graph2ctrl/newloadview/$day/$month/$year/1>&emsp;>></a>";?> </div>
+							<div align="center" style="font-size:30px; color:red;"><?php echo"<a href=".base_url()."Project_graph2ctrl/newloadview/$day/$month/$year/0><<&emsp;</a>";$monthNum = $month; $monthName = date("F", mktime(0, 0, 0, $monthNum, 10)); echo $day." ".$monthName." ".$year;
+echo"<a href=".base_url()."Project_graph2ctrl/newloadview/$day/$month/$year/1>&emsp;>></a>";?> </div>
 	<div id="chart"></div><br><br><?php if(!empty($d)){?> 
 <svg id="svgVisualize" width="2000" height="550"></svg><?php } else echo"No data";?>
 
@@ -263,7 +263,7 @@ echo"<a href=<?php echo base_url(); ?>index.php/Project_graph2ctrl/newloadview/$
 </html>
 <script>
     
-   d3.json('<?php echo base_url(); ?>index.php/project_graph2ctrl/graph/<?php echo $day;?>/<?php echo $month;?>/<?php echo $year;?>', function(error, data){console.log(data);
+   d3.json('<?php echo base_url(); ?>Project_graph2ctrl/graph/<?php echo $day;?>/<?php echo $month;?>/<?php echo $year;?>', function(error, data){console.log(data);
   data.forEach(function(d) {
        d.time = +d.time;
        d.people = +d.people;

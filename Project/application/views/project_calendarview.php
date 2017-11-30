@@ -59,7 +59,7 @@ td.calendar-day, td.calendar-day-np { width:150px; height:150px; padding:5px; bo
 	<header class="header">
               <body class="skin-dark">
 		<!-- BEGIN LOGO -->
-		<a href="<?php echo base_url(); ?>/index.php/dashboard" class="logo">
+		<a href="Dashboard" class="logo">
 			<img src="<?php echo base_url(); ?>assets/img/Fingent.png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
@@ -97,7 +97,7 @@ td.calendar-day, td.calendar-day-np { width:150px; height:150px; padding:5px; bo
 							
 							</li>
 							<li>
-								<a href="Project_displayctrl/logout"><i class="fa fa-power-off"></i>Log Out</a>
+								<a href="<?php echo base_url();?>Logout"><i class="fa fa-power-off"></i>Log Out</a>
 							</li>
 						</ul>
 					</li>
@@ -123,25 +123,25 @@ td.calendar-day, td.calendar-day-np { width:150px; height:150px; padding:5px; bo
 				
 				<ul class="sidebar-menu">
 					<li>
-						<a href="<?php echo base_url();?>index.php/dashboard">
+						<a href="<?php echo base_url();?>Dashboard">
 							<i class="fa fa-home"></i><span>Dashboard</span>
 						</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url();?>index.php/project_displayctrl">
+						<a href="<?php echo base_url();?>Project_displayctrl">
 							<i class="fa fa-laptop"></i><span>Admin Users</span>
 							
 						</a>
 						
 					<li >
-						<a href="<?php echo base_url();?>index.php/project_employeectrl">
+						<a href="<?php echo base_url();?>Project_employeectrl">
 							<i class="fa fa-align-left"></i><span>Employees</span>
 							
 						</a>
 						
 					</li>
 					<li class="active">
-						<a href="<?php echo base_url();?>index.php/project_calendarctrl/calendarcreate">
+						<a href="<?php echo base_url();?>Project_calendarctrl/calendarcreate">
 							<i class="fa fa-table"></i><span>Attendance</span>
 						
 						</a>
@@ -164,7 +164,7 @@ td.calendar-day, td.calendar-day-np { width:150px; height:150px; padding:5px; bo
 				<i class="fa fa-table"></i>
 				<span>Attendance</span>
 				<ol class="breadcrumb">
-					<li><a href="<?php echo base_url();?>index.php/dashboard">Dashboard</a></li>
+					<li><a href="<?php echo base_url();?>Dashboard">Dashboard</a></li>
 					<li class="active">Attendance</li>
 					
 				</ol>
@@ -195,10 +195,10 @@ function draw_calendar($month,$year,$noofpeople){
 $dateObj   = DateTime::createFromFormat('!m', $month);
 $monthName = $dateObj->format('F');	
 ?>
-<p style="font-size:30px;"><a href="<?php echo base_url(); ?>index.php/Project_calendarctrl/calendarcreate/<?php echo$month?>/<?php echo$year?>/0"><<</a>&nbsp;&nbsp;&nbsp;<?php
+<p style="font-size:30px;"><a href="<?php echo base_url(); ?>Project_calendarctrl/calendarcreate/<?php echo$month?>/<?php echo$year?>/0"><<</a>&nbsp;&nbsp;&nbsp;<?php
 echo"$monthName $year";
 ?>&nbsp;&nbsp;&nbsp;
-<a href="<?php echo base_url(); ?>index.php/Project_calendarctrl/calendarcreate/<?php echo$month?>/<?php echo$year?>/1">>></a></p>
+<a href="<?php echo base_url(); ?>Project_calendarctrl/calendarcreate/<?php echo$month?>/<?php echo$year?>/1">>></a></p>
 <?php
 /* draw table */
 	$calendar = '<table cellpadding="0" cellspacing="0" class="calendar">';
@@ -229,7 +229,7 @@ echo"$monthName $year";
        {
 		$calendar.= '<td class="calendar-day">';              
 			/* add in the day number */
-      			$calendar.='<a href='.base_url().'index.php/project_graph2ctrl/loadview/'.$list_day.'/'.$month.'/'.$year.'>';
+      			$calendar.='<a href='.base_url().'project_graph2ctrl/loadview/'.$list_day.'/'.$month.'/'.$year.'>';
 			$calendar.= '<div class="day-number">'.$list_day. '</div>'; 
 
 			/** QUERY THE DATABASE FOR AN ENTRY FOR THIS DAY !!  IF MATCHES FOUND, PRINT THEM !! **/       if($noofpeople[$list_day]!=0)

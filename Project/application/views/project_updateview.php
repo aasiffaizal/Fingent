@@ -39,7 +39,7 @@
 	<!-- BEGIN HEADER -->
 	<header class="header">
 		<!-- BEGIN LOGO -->
-		<a href="<?php echo base_url(); ?>index.php/dashboard" class="logo">
+		<a href="<?php echo base_url(); ?>Dashboard" class="logo">
 			<img src="http://www.infopark.in/companylogo/204fingent_logo_2014(300X100px).png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
@@ -60,7 +60,7 @@
 							
 							
 							<li>
-								<a href="#"><i class="fa fa-power-off"></i>Log Out</a>
+								<a href="<?php echo base_url();?>Logout"><i class="fa fa-power-off"></i>Log Out</a>
 							</li>
 						</ul>
 					</li>
@@ -85,25 +85,25 @@
 				
 				<ul class="sidebar-menu">
 					<li>
-						<a href="<?php echo base_url(); ?>index.php/dashboard">
+						<a href="<?php echo base_url(); ?>Dashboard">
 							<i class="fa fa-home"></i><span>Dashboard</span>
 						</a>
 					</li>
 					<li class="active">
-						<a href="<?php echo base_url(); ?>index.php/project_displayctrl">
+						<a href="<?php echo base_url(); ?>Project_displayctrl">
 							<i class="fa fa-laptop"></i><span>Admin Users</span>
 							
 						</a>
 						
 					<li >
-						<a href="<?php echo base_url(); ?>index.php/project_employeectrl">
+						<a href="<?php echo base_url(); ?>Project_employeectrl">
 							<i class="fa fa-align-left"></i><span>Employees</span>
 							
 						</a>
 						
 					</li>
 					<li>
-						<a href="<?php echo base_url(); ?>index.php/project_calendarctrl/calendarcreate">
+						<a href="<?php echo base_url(); ?>Project_calendarctrl/calendarcreate">
 							<i class="fa fa-table"></i><span>Attendance</span>
 						
 						</a>
@@ -128,8 +128,8 @@
 				<i class="fa fa-align-left"></i>
 				<span>Update</span>
 				<ol class="breadcrumb">
-					<li><a href="<?php echo base_url(); ?>index.php/dashboard">Dashboard</a></li>
-					<li><a href="<?php echo base_url(); ?>index.php/project_displayctrl">Admin Users</a></li>
+					<li><a href="<?php echo base_url(); ?>Dashboard">Dashboard</a></li>
+					<li><a href="<?php echo base_url(); ?>Project_displayctrl">Admin Users</a></li>
 					<li class="active">Update</li>
 				</ol>
 			</section>
@@ -150,7 +150,7 @@
 								
 							</div>
 							<div class="grid-body">
-								<form id="signupForm" class="form-horizontal" role="form" action="<?php echo base_url(); ?>index.php/Project_updatectrl/updateuser1" method="post">
+								<form id="signupForm" class="form-horizontal" role="form" action="<?php echo base_url(); ?>Project_updatectrl/updateuser1" method="post">
 									<div class="form-group">
 										<label class="col-sm-3 control-label">Name</label>
 										<div class="col-sm-7">
@@ -183,7 +183,7 @@
 										<div class="col-sm-offset-3 col-sm-9">
 											<div class="btn-group">
 												<button type="submit" class="btn btn-primary submit">Submit</button>
-<button type="button" class="btn btn-default" onclick="location.href = '<?php echo base_url(); ?>index.php/Project_displayctrl';">Cancel</button>
+<button type="button" class="btn btn-default" onclick="location.href = '<?php echo base_url(); ?>Project_displayctrl';">Cancel</button>
 											</div>
 										</div>
 									</div>

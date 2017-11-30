@@ -81,7 +81,7 @@
 							
 							</li>
 							<li>
-								<a href="Project_displayctrl/logout"><i class="fa fa-power-off"></i>Log Out</a>
+								<a href="Logout"><i class="fa fa-power-off"></i>Log Out</a>
 							</li>
 						</ul>
 					</li>
@@ -179,7 +179,7 @@ from punching machine</p></label>
 								
 										<div class="col-sm-offset-4 col-sm-10">
 											<div class="btn-group">
-												<br><br><br><input type="submit" name="submit" class="btn btn-primary">&nbsp;<button type="button" class="btn btn-default" onclick="location.href = '<?php echo base_url();?>index.php/project_uploadctrl';">Cancel</button>
+												<br><br><br><input type="submit" name="submit" class="btn btn-primary">&nbsp;<button type="button" class="btn btn-default" onclick="location.href = '<?php echo base_url();?>Project_uploadctrl';">Cancel</button>
 											</div>
 										</div>
 									</div>

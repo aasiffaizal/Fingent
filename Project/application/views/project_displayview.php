@@ -42,7 +42,7 @@
 	<!-- BEGIN HEADER -->
 	<header class="header">
 		<!-- BEGIN LOGO -->
-		<a href="<?php echo base_url(); ?>/index.php/dashboard" class="logo">
+		<a href="Dashboard" class="logo">
 			<img src="<?php echo base_url(); ?>assets/img/Fingent.png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
@@ -80,7 +80,7 @@
 							
 							</li>
 							<li>
-								<a href="Project_displayctrl/logout"><i class="fa fa-power-off"></i>Log Out</a>
+								<a href="Logout"><i class="fa fa-power-off"></i>Log Out</a>
 							</li>
 						</ul>
 					</li>
@@ -106,7 +106,7 @@
 				
 				<ul class="sidebar-menu">
 					<li>
-						<a href="<?php echo base_url(); ?>/index.php/dashboard">
+						<a href="Dashboard">
 							<i class="fa fa-home"></i><span>Dashboard</span>
 						</a>
 					</li>
@@ -162,7 +162,7 @@
 						<div class="grid no-border">
 							<div class="grid-header">
 								<i class="fa fa-table"></i>
-								<span class="grid-title">Admin DataTable</span><input type="submit" style="float: right;" class="btn btn-primary submit" onclick="location.href = '<?php echo base_url(); ?>index.php/Project_addctrl';" value="+Add"></button>
+								<span class="grid-title">Admin DataTable</span><input type="submit" style="float: right;" class="btn btn-primary submit" onclick="location.href = '<?php echo base_url(); ?>Project_addctrl';" value="+Add"></button>
 
 								
 							</div>

@@ -47,7 +47,7 @@
 	<!-- BEGIN HEADER -->
 	<header class="header">
 		<!-- BEGIN LOGO -->
-		<a href="<?php echo base_url(); ?>/index.php/dashboard" class="logo">
+		<a href="<?php echo base_url(); ?>Dashboard" class="logo">
 			<img src="<?php echo base_url(); ?>assets/img/Fingent.png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
@@ -85,7 +85,7 @@
 							
 							</li>
 							<li>
-								<a href="<?php echo base_url(); ?>/index.php/Project_displayctrl/logout"><i class="fa fa-power-off"></i>Log Out</a>
+								<a href="<?php echo base_url(); ?>Logout"><i class="fa fa-power-off"></i>Log Out</a>
 							</li>
 						</ul>
 					</li>
@@ -111,25 +111,25 @@
 				
 				<ul class="sidebar-menu">
 					<li>
-						<a href="<?php echo base_url(); ?>/index.php/dashboard">
+						<a href="<?php echo base_url(); ?>Dashboard">
 							<i class="fa fa-home"></i><span>Dashboard</span>
 						</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url(); ?>/index.php/project_displayctrl">
+						<a href="<?php echo base_url(); ?>Project_displayctrl">
 							<i class="fa fa-laptop"></i><span>Admin Users</span>
 							
 						</a>
 						
 					<li class="active" >
-						<a href="<?php echo base_url(); ?>/index.php/project_employeectrl">
+						<a href="<?php echo base_url(); ?>Project_employeectrl">
 							<i class="fa fa-align-left"></i><span>Employees</span>
 							
 						</a>
 						
 					</li>
 					<li>
-						<a href="<?php echo base_url(); ?>/index.php/project_calendarctrl/calendarcreate">
+						<a href="<?php echo base_url(); ?>Project_calendarctrl/calendarcreate">
 							<i class="fa fa-table"></i><span>Attendance</span>
 						
 						</a>
@@ -153,8 +153,8 @@
 				<i class="fa fa-bar-chart-o"></i>
 				<span>Punch Details</span>
 				<ol class="breadcrumb">
-					<li><a href="<?php echo base_url(); ?>/index.php/dashboard">Dashboard</a></li>
-					<li><a href="<?php echo base_url(); ?>/index.php/Project_employeectrl">Employees</a></li>
+					<li><a href="<?php echo base_url(); ?>Dashboard">Dashboard</a></li>
+					<li><a href="<?php echo base_url(); ?>Project_employeectrl">Employees</a></li>
 					<li class="active">Punch Details</li>
 				</ol>
 			</section>
@@ -174,8 +174,8 @@
 <div class="row">
 
 							<div class="grid-body">
-							<div align="center" style="font-size:30px; color:red;">	<?php echo"<a href=".base_url()."index.php/Project_graph1ctrl/newloadview/$var/$month/$year/0><<&emsp;</a>";$monthNum = $month; $monthName = date("F", mktime(0, 0, 0, $monthNum, 10)); echo $monthName." ".$year;
-							echo"<a href=".base_url()."index.php/Project_graph1ctrl/newloadview/$var/$month/$year/1>&emsp;>></a>";?> </div>
+							<div align="center" style="font-size:30px; color:red;">	<?php echo"<a href=".base_url()."Project_graph1ctrl/newloadview/$var/$month/$year/0><<&emsp;</a>";$monthNum = $month; $monthName = date("F", mktime(0, 0, 0, $monthNum, 10)); echo $monthName." ".$year;
+							echo"<a href=".base_url()."Project_graph1ctrl/newloadview/$var/$month/$year/1>&emsp;>></a>";?> </div>
 								<div id="chart"></div><br><br><?php if(empty($d)) echo "No data";?>
 							</div>
 						</div>
@@ -270,7 +270,7 @@
         //{"date": "2015-09-08", "mangoes": "2", "kiwis": "10", "lemons": "2"},
         //{"date": "2015-09-09", "mangoes": "10", "kiwis": "2", "lemons": "2"}
     //];
-d3.json('<?php echo base_url(); ?>index.php/project_graph1ctrl/graph/<?php echo $var;?>/<?php echo $month;?>/<?php echo $year;?>', function(error, data){console.log(data);
+d3.json('<?php echo base_url(); ?>Project_graph1ctrl/graph/<?php echo $var;?>/<?php echo $month;?>/<?php echo $year;?>', function(error, data){console.log(data);
     dateFormat = d3.time.format("%Y-%m-%d");
 
     data.forEach(function (e) {

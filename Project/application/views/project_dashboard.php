@@ -85,7 +85,7 @@
 							
 							</li>
 							<li>
-								<a href="Project_displayctrl/logout"><i class="fa fa-power-off"></i>Log Out</a>
+								<a href="Logout"><i class="fa fa-power-off"></i>Log Out</a>
 							</li>
 						</ul>
 					</li>
