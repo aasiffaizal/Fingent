@@ -14,7 +14,7 @@ function index()
 if($this->session->userdata('logged_in'))
     {
 $this->load->view('project_addview');
-function abc()
+if ($this->input->server('REQUEST_METHOD') == 'POST')
 {$name=$_POST["name"];
  $email=$_POST["email"];
  $password=$_POST["password"];
