@@ -20,7 +20,7 @@ function abc()
  $password=$_POST["password"];
  $status=$_POST["radio1"];
 $this->Project_addmodel->adduservalue($name,$email,$password,$status);
-redirect("http://localhost/Project/index.php/Project_displayctrl") ;
+redirect(base_url()."Project_displayctrl") ;
 } }
  else
     {

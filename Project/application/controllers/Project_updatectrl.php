@@ -37,7 +37,7 @@ $y=$_POST["oldname"];
 
 $u=$this->Project_updatemodel->updateuservalue($y,$b,$a,$c); 
 if($u)
-redirect("http://localhost/Project/index.php/Project_displayctrl");
+redirect(base_url()."Project_displayctrl");
 }
 else
     {
