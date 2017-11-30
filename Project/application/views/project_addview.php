@@ -170,7 +170,7 @@
 								
 							</div>
 							<div class="grid-body">
-								<form id="signupForm" class="form-horizontal" role="form" action="<?php echo base_url(); ?>index.php/Project_addctrl/abc" method="post">
+								<form id="signupForm" class="form-horizontal" role="form" action="<?php echo base_url(); ?>Project_addctrl/abc" method="post">
 									<div class="form-group">
 										<label class="col-sm-3 control-label">Name</label>
 										<div class="col-sm-7">

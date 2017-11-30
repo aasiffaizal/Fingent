@@ -18,7 +18,7 @@ redirect(base_url()."Project_displayctrl/logout", 'refresh');
 }
 
 
-redirect(base_url()."Project/index.php/Project_displayctrl");
+redirect(base_url()."Project_displayctrl");
  }
  else
     {
