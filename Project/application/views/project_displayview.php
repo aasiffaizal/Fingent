@@ -11,7 +11,7 @@
 	
 	<title>Admin Users</title>
 	
-	<link rel="icon" href="http://localhost/Project/favicon.ico">
+	<link rel="icon" href="<?php echo base_url(); ?>favicon.ico">
 	
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,18 +21,18 @@
 	<![endif]-->
 	
 	<!-- BEGIN CSS FRAMEWORK -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/font-awesome/css/font-awesome.min.css">
 	<!-- END CSS FRAMEWORK -->
 	
 	<!-- BEGIN CSS PLUGIN -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/pace/pace-theme-minimal.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/jquery-datatables/css/dataTables.bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/pace/pace-theme-minimal.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/jquery-datatables/css/dataTables.bootstrap.css">
 	<!-- END CSS PLUGIN -->
 	
 	<!-- BEGIN CSS TEMPLATE -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/main.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/skins.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skins.css">
 	<!-- END CSS TEMPLATE -->
 
 
@@ -43,7 +43,7 @@
 	<header class="header">
 		<!-- BEGIN LOGO -->
 		<a href="<?php echo base_url(); ?>/index.php/dashboard" class="logo">
-			<img src="http://localhost/Project/assets/img/Fingent.png" alt="Fingent" height="40">
+			<img src="<?php echo base_url(); ?>assets/img/Fingent.png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
 <!-- BEGIN NAVBAR -->
@@ -162,7 +162,7 @@
 						<div class="grid no-border">
 							<div class="grid-header">
 								<i class="fa fa-table"></i>
-								<span class="grid-title">Admin DataTable</span><input type="submit" style="float: right;" class="btn btn-primary submit" onclick="location.href = 'http://localhost/Project/index.php/Project_addctrl';" value="+Add"></button>
+								<span class="grid-title">Admin DataTable</span><input type="submit" style="float: right;" class="btn btn-primary submit" onclick="location.href = '<?php echo base_url(); ?>index.php/Project_addctrl';" value="+Add"></button>
 
 								
 							</div>

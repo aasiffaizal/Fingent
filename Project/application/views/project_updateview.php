@@ -11,7 +11,7 @@
 	
 	<title>Update a record</title>
 	
-<link rel="icon" href="http://localhost/Project/favicon.ico">
+<link rel="icon" href="<?php echo base_url(); ?>favicon.ico">
 	
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,17 +21,17 @@
 	<![endif]-->
 	
 	<!-- BEGIN CSS FRAMEWORK -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/font-awesome/css/font-awesome.min.css">
 	<!-- END CSS FRAMEWORK -->
 	
 	<!-- BEGIN CSS PLUGIN -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/pace/pace-theme-minimal.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/pace/pace-theme-minimal.css">
 	<!-- END CSS PLUGIN -->
 	
 	<!-- BEGIN CSS TEMPLATE -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/main.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/skins.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skins.css">
 	<!-- END CSS TEMPLATE -->
 </head>
 
@@ -39,7 +39,7 @@
 	<!-- BEGIN HEADER -->
 	<header class="header">
 		<!-- BEGIN LOGO -->
-		<a href="http://localhost/Project/index.php/dashboard" class="logo">
+		<a href="<?php echo base_url(); ?>index.php/dashboard" class="logo">
 			<img src="http://www.infopark.in/companylogo/204fingent_logo_2014(300X100px).png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
@@ -85,25 +85,25 @@
 				
 				<ul class="sidebar-menu">
 					<li>
-						<a href="http://localhost/Project/index.php/dashboard">
+						<a href="<?php echo base_url(); ?>index.php/dashboard">
 							<i class="fa fa-home"></i><span>Dashboard</span>
 						</a>
 					</li>
 					<li class="active">
-						<a href="http://localhost/Project/index.php/project_displayctrl">
+						<a href="<?php echo base_url(); ?>index.php/project_displayctrl">
 							<i class="fa fa-laptop"></i><span>Admin Users</span>
 							
 						</a>
 						
 					<li >
-						<a href="http://localhost/Project/index.php/project_employeectrl">
+						<a href="<?php echo base_url(); ?>index.php/project_employeectrl">
 							<i class="fa fa-align-left"></i><span>Employees</span>
 							
 						</a>
 						
 					</li>
 					<li>
-						<a href="http://localhost/Project/index.php/project_calendarctrl/calendarcreate">
+						<a href="<?php echo base_url(); ?>index.php/project_calendarctrl/calendarcreate">
 							<i class="fa fa-table"></i><span>Attendance</span>
 						
 						</a>
@@ -128,8 +128,8 @@
 				<i class="fa fa-align-left"></i>
 				<span>Update</span>
 				<ol class="breadcrumb">
-					<li><a href="http://localhost/Project/index.php/dashboard">Dashboard</a></li>
-					<li><a href="http://localhost/Project/index.php/project_displayctrl">Admin Users</a></li>
+					<li><a href="<?php echo base_url(); ?>index.php/dashboard">Dashboard</a></li>
+					<li><a href="<?php echo base_url(); ?>index.php/project_displayctrl">Admin Users</a></li>
 					<li class="active">Update</li>
 				</ol>
 			</section>
@@ -150,7 +150,7 @@
 								
 							</div>
 							<div class="grid-body">
-								<form id="signupForm" class="form-horizontal" role="form" action="http://localhost/Project/index.php/Project_updatectrl/updateuser1" method="post">
+								<form id="signupForm" class="form-horizontal" role="form" action="<?php echo base_url(); ?>index.php/Project_updatectrl/updateuser1" method="post">
 									<div class="form-group">
 										<label class="col-sm-3 control-label">Name</label>
 										<div class="col-sm-7">
@@ -183,7 +183,7 @@
 										<div class="col-sm-offset-3 col-sm-9">
 											<div class="btn-group">
 												<button type="submit" class="btn btn-primary submit">Submit</button>
-<button type="button" class="btn btn-default" onclick="location.href = 'http://localhost/Project/index.php/Project_displayctrl';">Cancel</button>
+<button type="button" class="btn btn-default" onclick="location.href = '<?php echo base_url(); ?>index.php/Project_displayctrl';">Cancel</button>
 											</div>
 										</div>
 									</div>
@@ -204,22 +204,22 @@
 	</div>
 
 	<!-- BEGIN JS FRAMEWORK -->
-	<script src="http://localhost/Project/assets/plugins/jquery-2.1.0.min.js"></script>
-	<script src="http://localhost/Project/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/jquery-2.1.0.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 	<!-- END JS FRAMEWORK -->
 	
 	<!-- BEGIN JS PLUGIN -->
-	<script src="http://localhost/Project/assets/plugins/pace/pace.min.js"></script>
-	<script src="http://localhost/Project/assets/plugins/jquery-totemticker/jquery.totemticker.min.js"></script>
-	<script src="http://localhost/Project/assets/plugins/jquery-resize/jquery.ba-resize.min.js"></script>
-	<script src="http://localhost/Project/assets/plugins/jquery-blockui/jquery.blockUI.min.js"></script>
-	<script src="http://localhost/Project/assets/plugins/jquery-validation/jquery.validate.min.js"></script>
-	<script src="http://localhost/Project/assets/js/validation.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/pace/pace.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/jquery-totemticker/jquery.totemticker.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/jquery-resize/jquery.ba-resize.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/jquery-blockui/jquery.blockUI.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/jquery-validation/jquery.validate.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/validation.js"></script>
 	<!-- END JS PLUGIN -->
 
 	<!-- BEGIN JS TEMPLATE -->
-	<script src="http://localhost/Project/assets/js/main.js"></script>
-	<script src="http://localhost/Project/assets/js/skin-selector.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/main.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/skin-selector.js"></script>
 	<!-- END JS TEMPLATE -->
 </body>
 </html>

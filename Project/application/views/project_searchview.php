@@ -11,7 +11,7 @@
 	
 	<title>Employees</title>
 	
-	<link rel="icon" href="http://localhost/Project/favicon.ico">
+	<link rel="icon" href="<?php echo base_url(); ?>favicon.ico">
 	
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,18 +21,18 @@
 	<![endif]-->
 	
 	<!-- BEGIN CSS FRAMEWORK -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/font-awesome/css/font-awesome.min.css">
 	<!-- END CSS FRAMEWORK -->
 	
 	<!-- BEGIN CSS PLUGIN -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/pace/pace-theme-minimal.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/jquery-datatables/css/dataTables.bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/pace/pace-theme-minimal.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/jquery-datatables/css/dataTables.bootstrap.css">
 	<!-- END CSS PLUGIN -->
 	
 	<!-- BEGIN CSS TEMPLATE -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/main.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/skins.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skins.css">
 	<!-- END CSS TEMPLATE -->
 
 
@@ -43,7 +43,7 @@
 	<header class="header">
 		<!-- BEGIN LOGO -->
 		<a href="<?php echo base_url();?>/index.php/dashboard" class="logo">
-			<img src="http://localhost/Project/assets/img/Fingent.png" alt="Fingent" height="40">
+			<img src="<?php echo base_url(); ?>assets/img/Fingent.png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
 <!-- BEGIN NAVBAR -->
@@ -148,8 +148,8 @@
 				<i class="fa fa-table"></i>
 				<span>Employees</span>
 				<ol class="breadcrumb">
-					<li><a href="<?php echo base_url();?>/index.php/dashboard">Dashboard</a></li>
-					<li ><a href="<?php echo base_url();?>/index.php/project_employeectrl">Employees</a></li>
+					<li><a href="dashboard">Dashboard</a></li>
+					<li ><a href="project_employeectrl">Employees</a></li>
 					<li class="active">Search Result</li>
 				</ol>
 			
@@ -163,7 +163,7 @@
 			<div class="col-md-12">
 		<div class="grid no-border">
 							<div class="grid-header">
-				<form action="<?php echo base_url();?>index.php/Project_searchctrl/searchvalue" method="post">From<input type="search" name="date1" value="<?php echo $date1;?>"> To<input type="search" name="date2" value="<?php echo $date2;?>">&nbsp;<input Value="Search" type="submit"class="btn btn-primary submit"><button type="button" class="btn btn-default" onclick="location.href = 'http://localhost/Project/index.php/Project_employeectrl';">Clear</button></form>
+				<form action="<?php echo base_url();?>index.php/Project_searchctrl/searchvalue" method="post">From<input type="search" id="date1" placeholder="YYYY-MM-DD" name="date1" value="<?php echo $date1;?>"> To<input type="search"  id="date2" placeholder="YYYY-MM-DD" name="date2"  value="<?php echo $date2;?>">&nbsp;<input Value="Search" type="submit"class="btn btn-primary submit"><button type="button" class="btn btn-default" onclick="location.href = '<?php echo base_url(); ?>index.php/Project_employeectrl';">Clear</button></form>
 			</div><div></div></div>
 			</section>
 								
@@ -189,7 +189,7 @@
 
 
 
-				</div>
+				
 
 
 										<tr>
@@ -197,6 +197,8 @@
 											<th>#</th>
 											<th>Name/Id</th>
 											<th>Last punch date time</th>
+											<th>Action</th>
+							
                                                                                    </tr></thead>
 <tbody>
 <?php $c=1; foreach($things as $post){?>
@@ -209,7 +211,7 @@
       </tr>    
      <?php }?>  
 
-										</tr>
+										
 										
 									</tbody>
 								</table>
@@ -239,6 +241,14 @@
 	<!-- BEGIN JS TEMPLATE -->
 	<script src="<?php echo base_url(); ?>assets/js/main.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/skin-selector.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/jquery-maskedinput/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript">
+		/* MASKED INPUT */
+		$.mask.definitions['~']='[+-]';
+		$('#date1').mask('9999-99-99');
+		$('#date2').mask('9999-99-99');
+	</script>		
+
 	<!-- END JS TEMPLATE -->
 </body>
 </html>

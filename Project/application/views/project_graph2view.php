@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script src="http://localhost/Project/D3/d3.v3.min.js"></script>
-<script type="text/javascript" src="http://localhost/Project/D3/crossfilter.js"></script>
+<script src="<?php echo base_url(); ?>D3/d3.v3.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>D3/crossfilter.js"></script>
 
 
 
@@ -16,7 +16,7 @@
 	
 	<title>Attendance</title>
 	
-	<link rel="icon" href="http://localhost/Project/favicon.ico">
+	<link rel="icon" href="<?php echo base_url(); ?>favicon.ico">
 	
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,18 +26,18 @@
 	<![endif]-->
 	
 	<!-- BEGIN CSS FRAMEWORK -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/font-awesome/css/font-awesome.min.css">
 	<!-- END CSS FRAMEWORK -->
 	
 	<!-- BEGIN CSS PLUGIN -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/pace/pace-theme-minimal.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/jquery-datatables/css/dataTables.bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/pace/pace-theme-minimal.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/jquery-datatables/css/dataTables.bootstrap.css">
 	<!-- END CSS PLUGIN -->
 	
 	<!-- BEGIN CSS TEMPLATE -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/main.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/skins.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skins.css">
 	<!-- END CSS TEMPLATE -->
 
 
@@ -48,7 +48,7 @@
 	<header class="header">
 		<!-- BEGIN LOGO -->
 		<a href="<?php echo base_url(); ?>/index.php/dashboard" class="logo">
-			<img src="http://localhost/Project/assets/img/Fingent.png" alt="Fingent" height="40">
+			<img src="<?php echo base_url(); ?>assets/img/Fingent.png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
 <!-- BEGIN NAVBAR -->
@@ -168,14 +168,14 @@
 						<div class="grid">
 							<div class="grid-header">
 								<i class="fa fa-bar-chart-o"></i>
-								<span class="grid-title">Attendance:&nbsp;<?php //echo $var;?></span><input type="submit" style="float: right;" class="btn btn-primary submit" onclick="location.href = 'http://localhost/Project/index.php/Project_uploadctrl';" value="+Import New"></button>
+								<span class="grid-title">Attendance:&nbsp;<?php //echo $var;?></span><input type="submit" style="float: right;" class="btn btn-primary submit" onclick="location.href = '<?php echo base_url(); ?>index.php/Project_uploadctrl';" value="+Import New"></button>
 								
 							</div>
 <div class="row">
 
 							<div class="grid-body">
-<div align="center" style="font-size:30px; color:red;"><?php echo"<a href=http://localhost/Project/index.php/Project_graph2ctrl/newloadview/$day/$month/$year/0><<&emsp;</a>";$monthNum = $month; $monthName = date("F", mktime(0, 0, 0, $monthNum, 10)); echo $day." ".$monthName." ".$year;
-echo"<a href=http://localhost/Project/index.php/Project_graph2ctrl/newloadview/$day/$month/$year/1>&emsp;>></a>";?> </div>
+<div align="center" style="font-size:30px; color:red;"><?php echo"<a href=<?php echo base_url(); ?>index.php/Project_graph2ctrl/newloadview/$day/$month/$year/0><<&emsp;</a>";$monthNum = $month; $monthName = date("F", mktime(0, 0, 0, $monthNum, 10)); echo $day." ".$monthName." ".$year;
+echo"<a href=<?php echo base_url(); ?>index.php/Project_graph2ctrl/newloadview/$day/$month/$year/1>&emsp;>></a>";?> </div>
 	<div id="chart"></div><br><br><?php if(!empty($d)){?> 
 <svg id="svgVisualize" width="2000" height="550"></svg><?php } else echo"No data";?>
 
@@ -263,7 +263,7 @@ echo"<a href=http://localhost/Project/index.php/Project_graph2ctrl/newloadview/$
 </html>
 <script>
     
-   d3.json('http://localhost/Project/index.php/project_graph2ctrl/graph/<?php echo $day;?>/<?php echo $month;?>/<?php echo $year;?>', function(error, data){console.log(data);
+   d3.json('<?php echo base_url(); ?>index.php/project_graph2ctrl/graph/<?php echo $day;?>/<?php echo $month;?>/<?php echo $year;?>', function(error, data){console.log(data);
   data.forEach(function(d) {
        d.time = +d.time;
        d.people = +d.people;

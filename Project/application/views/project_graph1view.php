@@ -16,7 +16,7 @@
 	
 	<title>Punch Details</title>
 	
-	<link rel="icon" href="http://localhost/Project/favicon.ico">
+	<link rel="icon" href="<?php echo base_url(); ?>favicon.ico">
 	
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,18 +26,18 @@
 	<![endif]-->
 	
 	<!-- BEGIN CSS FRAMEWORK -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/font-awesome/css/font-awesome.min.css">
 	<!-- END CSS FRAMEWORK -->
 	
 	<!-- BEGIN CSS PLUGIN -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/pace/pace-theme-minimal.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/jquery-datatables/css/dataTables.bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/pace/pace-theme-minimal.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/jquery-datatables/css/dataTables.bootstrap.css">
 	<!-- END CSS PLUGIN -->
 	
 	<!-- BEGIN CSS TEMPLATE -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/main.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/skins.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skins.css">
 	<!-- END CSS TEMPLATE -->
 
 
@@ -48,7 +48,7 @@
 	<header class="header">
 		<!-- BEGIN LOGO -->
 		<a href="<?php echo base_url(); ?>/index.php/dashboard" class="logo">
-			<img src="http://localhost/Project/assets/img/Fingent.png" alt="Fingent" height="40">
+			<img src="<?php echo base_url(); ?>assets/img/Fingent.png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
 <!-- BEGIN NAVBAR -->
@@ -174,9 +174,9 @@
 <div class="row">
 
 							<div class="grid-body">
-<div align="center" style="font-size:30px; color:red;">	<?php echo"<a href=http://localhost/Project/index.php/Project_graph1ctrl/newloadview/$var/$month/$year/0><<&emsp;</a>";$monthNum = $month; $monthName = date("F", mktime(0, 0, 0, $monthNum, 10)); echo $monthName." ".$year;
-echo"<a href=http://localhost/Project/index.php/Project_graph1ctrl/newloadview/$var/$month/$year/1>&emsp;>></a>";?> </div>
-	<div id="chart"></div><br><br><?php if(empty($d)) echo "No data";?>
+							<div align="center" style="font-size:30px; color:red;">	<?php echo"<a href=".base_url()."index.php/Project_graph1ctrl/newloadview/$var/$month/$year/0><<&emsp;</a>";$monthNum = $month; $monthName = date("F", mktime(0, 0, 0, $monthNum, 10)); echo $monthName." ".$year;
+							echo"<a href=".base_url()."index.php/Project_graph1ctrl/newloadview/$var/$month/$year/1>&emsp;>></a>";?> </div>
+								<div id="chart"></div><br><br><?php if(empty($d)) echo "No data";?>
 							</div>
 						</div>
 					</div>
@@ -270,7 +270,7 @@ echo"<a href=http://localhost/Project/index.php/Project_graph1ctrl/newloadview/$
         //{"date": "2015-09-08", "mangoes": "2", "kiwis": "10", "lemons": "2"},
         //{"date": "2015-09-09", "mangoes": "10", "kiwis": "2", "lemons": "2"}
     //];
-d3.json('http://localhost/Project/index.php/project_graph1ctrl/graph/<?php echo $var;?>/<?php echo $month;?>/<?php echo $year;?>', function(error, data){console.log(data);
+d3.json('<?php echo base_url(); ?>index.php/project_graph1ctrl/graph/<?php echo $var;?>/<?php echo $month;?>/<?php echo $year;?>', function(error, data){console.log(data);
     dateFormat = d3.time.format("%Y-%m-%d");
 
     data.forEach(function (e) {

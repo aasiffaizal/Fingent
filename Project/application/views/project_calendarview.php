@@ -27,7 +27,7 @@ td.calendar-day, td.calendar-day-np { width:150px; height:150px; padding:5px; bo
 	
 	<title>Attendance</title>
 	
-	<link rel="icon" href="http://localhost/Project/favicon.ico">
+	<link rel="icon" href="<?php echo base_url(); ?>favicon.ico">
 	
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,18 +37,18 @@ td.calendar-day, td.calendar-day-np { width:150px; height:150px; padding:5px; bo
 	<![endif]-->
 	
 	<!-- BEGIN CSS FRAMEWORK -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/font-awesome/css/font-awesome.min.css">
 	<!-- END CSS FRAMEWORK -->
 	
 	<!-- BEGIN CSS PLUGIN -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/pace/pace-theme-minimal.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/plugins/jquery-datatables/css/dataTables.bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/pace/pace-theme-minimal.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/jquery-datatables/css/dataTables.bootstrap.css">
 	<!-- END CSS PLUGIN -->
 	
 	<!-- BEGIN CSS TEMPLATE -->
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/main.css">
-	<link rel="stylesheet" href="http://localhost/Project/assets/css/skins.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skins.css">
 	<!-- END CSS TEMPLATE -->
 
 
@@ -60,7 +60,7 @@ td.calendar-day, td.calendar-day-np { width:150px; height:150px; padding:5px; bo
               <body class="skin-dark">
 		<!-- BEGIN LOGO -->
 		<a href="<?php echo base_url(); ?>/index.php/dashboard" class="logo">
-			<img src="http://localhost/Project/assets/img/Fingent.png" alt="Fingent" height="40">
+			<img src="<?php echo base_url(); ?>assets/img/Fingent.png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
 <!-- BEGIN NAVBAR -->
@@ -195,10 +195,10 @@ function draw_calendar($month,$year,$noofpeople){
 $dateObj   = DateTime::createFromFormat('!m', $month);
 $monthName = $dateObj->format('F');	
 ?>
-<p style="font-size:30px;"><a href="http://localhost/Project/index.php/Project_calendarctrl/calendarcreate/<?php echo$month?>/<?php echo$year?>/0"><<</a>&nbsp;&nbsp;&nbsp;<?php
+<p style="font-size:30px;"><a href="<?php echo base_url(); ?>index.php/Project_calendarctrl/calendarcreate/<?php echo$month?>/<?php echo$year?>/0"><<</a>&nbsp;&nbsp;&nbsp;<?php
 echo"$monthName $year";
 ?>&nbsp;&nbsp;&nbsp;
-<a href="http://localhost/Project/index.php/Project_calendarctrl/calendarcreate/<?php echo$month?>/<?php echo$year?>/1">>></a></p>
+<a href="<?php echo base_url(); ?>index.php/Project_calendarctrl/calendarcreate/<?php echo$month?>/<?php echo$year?>/1">>></a></p>
 <?php
 /* draw table */
 	$calendar = '<table cellpadding="0" cellspacing="0" class="calendar">';

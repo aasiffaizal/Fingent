@@ -11,7 +11,7 @@
 	
 	<title>Add a record</title>
 	
-<link rel="icon" href="http://localhost/Project/favicon.ico">
+<link rel="icon" href="<?php echo base_url(); ?>favicon.ico">
 	
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -170,7 +170,7 @@
 								
 							</div>
 							<div class="grid-body">
-								<form id="signupForm" class="form-horizontal" role="form" action="http://localhost/Project/index.php/Project_addctrl/abc" method="post">
+								<form id="signupForm" class="form-horizontal" role="form" action="<?php echo base_url(); ?>index.php/Project_addctrl/abc" method="post">
 									<div class="form-group">
 										<label class="col-sm-3 control-label">Name</label>
 										<div class="col-sm-7">
@@ -213,7 +213,7 @@
 										<div class="col-sm-offset-5 col-sm-6">
 											<div class="btn-group">
 												<br><button type="submit" class="btn btn-primary">Submit</button>
-												<button type="button" class="btn btn-default" onclick="location.href = 'http://localhost/Project/index.php/Project_displayctrl';">Cancel</button>
+												<button type="button" class="btn btn-default" onclick="location.href = '<?php echo base_url(); ?>index.php/Project_displayctrl';">Cancel</button>
 											</div>
 
 											</div>
@@ -252,7 +252,7 @@
 
 	<!-- BEGIN JS FRAMEWORK -->
 	<script src="<?php echo base_url(); ?>assets/plugins/jquery-2.1.0.min.js"></script>
-	<script src="http://localhost/Project/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 	<!-- END JS FRAMEWORK -->
 	
 	<!-- BEGIN JS PLUGIN -->

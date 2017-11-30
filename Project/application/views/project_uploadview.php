@@ -44,7 +44,7 @@
 
 		<!-- BEGIN LOGO -->
 		<a href="dashboard" class="logo">
-			<img src="http://localhost/Project/assets/img/Fingent.png" alt="Fingent" height="40">
+			<img src="<?php echo base_url(); ?>assets/img/Fingent.png" alt="Fingent" height="40">
 		</a>
 		<!-- END LOGO -->
 		<!-- BEGIN NAVBAR -->

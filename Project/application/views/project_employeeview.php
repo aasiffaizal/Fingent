@@ -162,7 +162,7 @@
 			<div class="col-md-12">
 		<div class="grid no-border">
 							<div class="grid-header">
-				<form action="Project_searchctrl/searchvalue" method="post">From<input type="search" name="date1"> To<input type="search" name="date2">&nbsp;<input Value="Search" type="submit"class="btn btn-primary submit"><button type="button" class="btn btn-default" onclick="location.href = 'http://localhost/Project/index.php/Project_employeectrl';">Clear</button></form>		
+				<form action="Project_searchctrl/searchvalue" method="post">From<input type="search"  id="date1" placeholder="YYYY-MM-DD" name="date1"> To<input type="search" id="date2" placeholder="YYYY-MM-DD" name="date2">&nbsp;<input Value="Search" type="submit"class="btn btn-primary submit"><button type="button" class="btn btn-default" onclick="location.href = '<?php echo base_url(); ?>index.php/Project_employeectrl';">Clear</button></form>		
 			</div><div></div></div>
 			</section>
 								
@@ -244,6 +244,13 @@
 	<!-- BEGIN JS TEMPLATE -->
 	<script src="<?php echo base_url(); ?>assets/js/main.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/skin-selector.js"></script>
+	<script src="<?php echo base_url(); ?>assets/plugins/jquery-maskedinput/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript">
+		/* MASKED INPUT */
+		$.mask.definitions['~']='[+-]';
+		$('#date2').mask('9999-99-99');
+		$('#date1').mask('9999-99-99');
+	</script>		
 	<!-- END JS TEMPLATE -->
 </body>
 </html>

@@ -47,7 +47,7 @@
 							<img class="profile-img" src="<?php echo base_url(); ?>assets/img/photo.png" alt="">
 							<!-- END PROFILE IMAGE -->
 							<!-- BEGIN LOGIN FORM -->
-							<form name="login" action="Project_verify" class="form-login" method="post">
+							<form name="login" action="Login" class="form-login" method="post">
 								<input type="text" name="email" class="form-control" placeholder="Email" autofocus>
 								<input type="password" name="password" class="form-control" placeholder="Password">
 								<button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
